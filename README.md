@@ -2,17 +2,19 @@
 
 **WELCOME** 
 
-You might be wonderin what is "EpakSIAK" and how you can use it to hopefully win the SIAK war. Essentially "EpakSIAK" can help you constantly refresh and choose your classes for you increasing your chance of winning. Do remember you still have to manually submit the IRS, the reason for this is to minimize the risk of prematurely submitting it and instead having to do it all over again.
-
+You might be wonderin what is "EpakSIAK" and how you can use it to hopefully win the SIAK war. Essentially "EpakSIAK" can help you constantly refresh and choose your classes for you increasing your chance of winning. EpakSIAK is specifically designed to run on MacOS. EpakSIAK can run in windows/linux too however i much recommend you check out sl1ckthreads's SiakJover bot as that is more geared towards windows/linux.
 
 ## Setup Instructions
 
 ### 1. Prerequisites
 
-   - **Get Homebrew**: 
-
    - **Open Terminal**: Open command prompt or terminal depending on your operating system
 
+   - **Get Homebrew**: This is MacOS specific so just skip if you're using windows. For all you MacOS users however, copy and paste the command below into your terminal. You might need to put in your password, don't worry this is standard practice. You might also need to restart your device after installing so do so real quick.
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+     
    - **Get Python**: Obviously since EpakSIAK runs on Python, you need to have that installed on your device. Open cmd (Windows) or terminal and install python using:
 ```
 brew install python
@@ -23,7 +25,7 @@ brew install python
 brew install python-tk
 ```
 
-   - **Install chromedriver**: If you're on MacOS and If you're using this near the time as of me writing this (3 August 2024) don't worry about this since i have already installed it for you in this folder and it is still up to date. However, if not using MacOS or if you're using this after the 2024 2nd semester term, download it for the corrct corresponding device and chrome version then replace the driver in this folder with the new one.
+   - **Install chromedriver**: If you're on MacOS and If you're using this near the time as of me writing this (3 August 2024) don't worry about this since i have already installed it for you in this folder and it should still be up to date. However if you're not using MacOS or if you're using this in the future, replace the one in this folder with a chromedriver that corresponds to your current OS and version of Google Chrome.
 
    - **Navigate to the Folder**: In your cmd or terminal and change the directory to your EpakSIAK folder using:
 ```
