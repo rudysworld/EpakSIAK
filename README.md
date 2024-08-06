@@ -24,7 +24,7 @@ brew install python
 ```
 brew install python-tk
 ```
-   - **Download EpakSIAK: I recommend cloning this repisotory using git (for this to work you need to have git preinstalled https://git-scm.com/downloads, download the one that corresponds to your OS). You can clone by using this command below. Alternatively, you can download the ZIP directly but for instructions sake just use git.
+   - **Download EpakSIAK**: I recommend cloning this repisotory using git (for this to work you need to have git preinstalled https://git-scm.com/downloads, download the one that corresponds to your OS). You can clone by using this command below. Alternatively, you can download the ZIP directly but for instructions sake just use git.
 ```
 git clone https://github.com/rudysworld/EpakSIAK.git
 ```
