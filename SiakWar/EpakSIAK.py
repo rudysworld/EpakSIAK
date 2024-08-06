@@ -10,7 +10,9 @@ from selenium.common.exceptions import TimeoutException
 import re
 
 auth_page = "https://academic.ui.ac.id/main/Authentication/"
-course_plan_page = "file:///Users/hilmirusydi/EpakSIAK/SiakWar/testground/Penambahan%20IRS%20-%20Dennis%20Al%20Baihaqi%20Walangadi%20(1906400141)%3B%20Kurikulum%2009.00.12.01-2016%20-%20SIAK%20NG.html"
+course_plan_page = "https://academic.ui.ac.id/main/CoursePlan/CoursePlanEdit"
+
+
 def setup_driver():
     options = Options()
     options.add_argument('--ignore-certificate-errors')
@@ -91,7 +93,6 @@ def select_radio_buttons(driver, matkul_code):
     matkul_len = len(matkul_code)
     cnt = 0
     not_found = []
-    
     print('Matkul picked:')
     for code in matkul_code:
         print(code)
@@ -110,8 +111,8 @@ def select_radio_buttons(driver, matkul_code):
                 print("Clicking!")
                 element.click()
             found = True
-        except:
-            pass  # Ignore errors and proceed to the next method
+        except Exception as e:
+            print(f"Error finding element by value for code {code}: {e}")
 
         # If not found by value, try using the title
         if not found:
@@ -123,8 +124,8 @@ def select_radio_buttons(driver, matkul_code):
                     print("Clicking!")
                     element.click()
                 found = True
-            except:
-                pass  # Ignore errors and proceed to the next method
+            except Exception as e:
+                print(f"Error finding element by title for code {code}: {e}")
 
         # If still not found, try using part of the URL
         if not found:
@@ -136,8 +137,8 @@ def select_radio_buttons(driver, matkul_code):
                     print("Clicking!")
                     element.click()
                 found = True
-            except:
-                pass  # Ignore errors and proceed
+            except Exception as e:
+                print(f"Error finding element by URL for code {code}: {e}")
 
         if not found:
             not_found.append(code)
@@ -157,7 +158,6 @@ def select_radio_buttons(driver, matkul_code):
             print(f"Error finding or clicking the submit button: {e}")
 
 
-
 def process_page(driver, username, password, matkul_code):
     if not login(driver, username, password):
         show_error_message("Login failed. Please check your username and password in config.txt")
@@ -174,9 +174,9 @@ def process_page(driver, username, password, matkul_code):
 
 
 if __name__ == "__main__":
-    print("EpakSIAK Testing - May we win the war")
+    print("EpakSIAK - May we win the war")
     print("Starting...")
-    config = load_config('configtest.txt')
+    config = load_config('config.txt')
     
     driver = setup_driver()
 
