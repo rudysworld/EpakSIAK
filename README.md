@@ -59,8 +59,6 @@ python3 -m pip install selenium
    - CTRL+C to stop the program entirely 
    
 
-## Do not worry about the folder "testground", it is just for testing making sure this works but feel free tinker with it if you know what you're doing.
-
 ## Warnings!!
 
 Do not `Go back one page` or you will break the program
