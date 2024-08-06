@@ -1,0 +1,7 @@
+username: (your username)
+password: (your password)
+matkul_code:
+(put in your matkul code-number of sks, delete this bracket once your done)
+608378-4
+716626-4
+751263-3
