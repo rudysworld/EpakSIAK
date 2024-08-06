@@ -24,6 +24,10 @@ brew install python
 ```
 brew install python-tk
 ```
+   - **Download EpakSIAK: I recommend cloning this repisotory using git (for this to work you need to have git preinstalled https://git-scm.com/downloads, download the one that corresponds to your OS). You can clone by using this command below. Alternatively, you can download the ZIP directly but for instructions sake just use git.
+```
+git clone https://github.com/rudysworld/EpakSIAK.git
+```
 
    - **Install chromedriver**: If you're on MacOS and If you're using this near the time as of me writing this (3 August 2024) don't worry about this since i have already installed it for you in this folder and it should still be up to date. However if you're not using MacOS or if you're using this in the future, replace the one in this folder with a chromedriver that corresponds to your current OS and version of Google Chrome.
 
