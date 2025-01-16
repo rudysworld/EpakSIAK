@@ -2,7 +2,7 @@
 
 **WELCOME** 
 
-You might be wonderin what is "EpakSIAK" and how you can use it to hopefully win the SIAK war. Essentially "EpakSIAK" can help you constantly refresh and choose your classes for you increasing your chance of winning. EpakSIAK is specifically designed to run on MacOS. EpakSIAK can run in windows/linux too however i much recommend you check out sl1ckthreads's SiakJover bot as that is simpler and more geared towards windows/linux.
+You might be wonderin what is "EpakSIAK" and how you can use it to hopefully win the SIAK war. Essentially "EpakSIAK" is a tool to help you constantly refresh and choose your classes for you, which in theory would increase your chances of winning. EpakSIAK is specifically designed to run on MacOS. While EpakSIAK _could_ run in windows/linux too, i much recommend you check out sl1ckthreads's SiakJover bot as that is simpler and more geared towards windows/linux.
 
 ## Setup Instructions
 
